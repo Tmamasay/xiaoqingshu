@@ -3,7 +3,7 @@
 <search></search>
   <lunbo></lunbo>
 <leibie :LBDatas="LBDatas"></leibie>
-<tabBarFK :tabDatas="tabDatas"></tabBarFK>
+<tab v-if='current' :handleChange="getUserInfo" :current="current" ></tab>
 
 
   </div>
@@ -14,7 +14,7 @@ import card from "@/components/card";
 import lunbo from "@/components/lunbo/lunbo";
 import search from "@/components/search/search";
 import leibie from "@/components/leibie/leibie";
-import tabBarFK from "@/components/tabBar/tabBar";
+import tab from "@/components/tab/tab";
 
 export default {
   data() {
@@ -43,12 +43,9 @@ export default {
           name: "NB",
           img: "新的开始"
         }
-      ],
-      tabDatas: [
-        { title: "选项一", content: "内容一" },
-        { title: "选项二", content: "内容二" },
-        { title: "选项三", content: "内容三" }
       ]
+      ,current: 'tab1'
+    
     };
   },
 
@@ -57,7 +54,7 @@ export default {
     lunbo,
     search,
     leibie,
-    tabBarFK
+    tab
     // tabBar
   },
 
@@ -77,6 +74,12 @@ export default {
           });
         }
       });
+    },
+     handleChange (ev) {
+          console.log('2')
+          this.setData({
+            current: ev.target.key
+        });
     }
     // clickHandle (msg, ev) {
     //   console.log('clickHandle:', msg, ev)

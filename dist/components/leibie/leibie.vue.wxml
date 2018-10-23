@@ -1,0 +1,7 @@
+<import src="/components/itemLB/itemLB.vue.wxml" /><template name="a468ce52">
+  <view class="_view data-v-7da3f524 content">
+    <wxc-panel border="{{false}}" class="_wxc-panel data-v-7da3f524">
+      <wxc-flex class="_wxc-flex data-v-7da3f524 wrap" main="around"><template wx:key="index" data="{{...$root[$kk+'0-'+index], $root}}" is="746eec77" wx:for="{{LBDatas}}" wx:for-index="index" wx:for-item="LBData"></template></wxc-flex>
+    </wxc-panel>
+  </view>
+</template>

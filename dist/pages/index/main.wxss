@@ -1,0 +1,69 @@
+@import "../../common/vendor.wxss";
+
+.container.data-v-5c30957c {
+  padding: 0;
+}
+.userinfo.data-v-5c30957c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar.data-v-5c30957c {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname.data-v-5c30957c {
+  color: #aaa;
+}
+.usermotto.data-v-5c30957c {
+  margin-top: 300rpx;
+}
+.form-control.data-v-5c30957c {
+  display: block;
+  padding: 0 24rpx;
+  margin-bottom: 10rpx;
+  border: 2rpx solid #ccc;
+}
+.counter.data-v-5c30957c {
+  display: inline-block;
+  margin: 20rpx auto;
+  padding: 10rpx 20rpx;
+  color: blue;
+  border: 2rpx solid blue;
+}
+.ga_swiper {
+  width: 100%;
+}
+image {
+  width: 100%;
+}
+.search-wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  color: #fff;
+  background: #f6f6f6;
+}
+.search {
+  flex: 1;
+  margin: 0 24rpx;
+}
+.content {
+  padding: 5rpx;
+  width: 100%;
+}
+.avatar {
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+}
+._p {
+  text-align: center;
+}
+.tabStyle {
+  width: 100%;
+  font-size: 16rpx;
+}

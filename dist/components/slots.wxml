@@ -1,0 +1,6 @@
+<import src="/components/search/search.vue.wxml" />
+<import src="/components/lunbo/lunbo.vue.wxml" />
+<import src="/components/leibie/leibie.vue.wxml" />
+<import src="/components/tab/tab.vue.wxml" />
+<import src="/components/card.vue.wxml" />
+<import src="/components/itemLB/itemLB.vue.wxml" />

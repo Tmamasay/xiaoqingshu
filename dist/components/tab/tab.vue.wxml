@@ -1,0 +1,9 @@
+<template name="4c7d2149">
+  <view class="_div data-v-7a486ccc tabStyle">
+    <i-tabs current="{{current}}" class="_i-tabs data-v-7a486ccc">
+      <i-tab key="tab1" title="发现" count="3" class="_i-tab data-v-7a486ccc"></i-tab>
+      <i-tab key="tab2" title="关注" class="_i-tab data-v-7a486ccc"></i-tab>
+      <i-tab key="tab3" title="热门" dot class="_i-tab data-v-7a486ccc"></i-tab>
+    </i-tabs>
+  </view>
+</template>

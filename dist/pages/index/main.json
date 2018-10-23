@@ -1,0 +1,19 @@
+ {
+    "usingComponents": {
+       "wxc-icon": "/static/minui/wxc-icon/dist/index",
+       "wxc-search": "/static/minui/wxc-search/dist/index",
+       "wxc-panel": "/static/minui/wxc-panel/dist/index",
+       "wxc-flex": "/static/minui/wxc-flex/dist/index",
+       "wxc-avatar": "/static/minui/wxc-avatar/dist/index",
+       "i-tabs": "/static/iView/tabs/index",
+       "i-tab": "/static/iView/tab/index"
+    },
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "MT",
+  "background":"#666666"
+
+
+
+ }
