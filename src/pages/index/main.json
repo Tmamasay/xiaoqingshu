@@ -11,7 +11,8 @@
         "wxc-elip": "/static/minui/wxc-elip/dist/index",
         "wxc-label": "/static/minui/wxc-label/dist/index",
         "i-tab-bar": "/static/iView/tab-bar/index",
-        "i-tab-bar-item": "/static/iView/tab-bar-item/index"
+        "i-tab-bar-item": "/static/iView/tab-bar-item/index",
+        "wxc-loadmore": "/static/minui/wxc-loadmore/dist/index"
     },
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "light",

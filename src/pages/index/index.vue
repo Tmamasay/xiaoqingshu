@@ -5,7 +5,10 @@
 <leibie :LBDatas="LBDatas"></leibie>
 <tab v-if='current' :handleChange="handleChange" :current="current" ></tab>
 <remen v-if='comments' :comments="comments"></remen>
-<tabbar  v-if='currentTB' :handleChangeTB="handleChangeTB" :currentTB="currentTB" ></tabbar>
+<tabfooter  v-if='currenttab' :handleChangetab="handleChangetab" :currenttab="currenttab" ></tabfooter>
+<div class="footer">
+<wxc-loadmore :is-end="true" text="到底了～"></wxc-loadmore>
+</div>
 
 
   </div>
@@ -18,7 +21,7 @@ import search from "@/components/search/search";
 import leibie from "@/components/leibie/leibie";
 import tab from "@/components/tab/tab";
 import remen from "@/components/remen/remen";
-import tabbar from "@/components/tabBar/tabBar";
+import tabfooter from "@/components/tabfooter/tabfooter";
 
 export default {
   data() {
@@ -49,7 +52,7 @@ export default {
         }
       ]
       ,current: 'tab1',
-      currentTB:'homepage',
+      currenttab:'homepage',
       comments:[{
         userImage:'https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg',
         userName:'飞向远方',
@@ -77,8 +80,7 @@ export default {
     leibie,
     tab,
     remen,
-    tabbar
-    // tabBar
+    tabfooter
   },
 
   methods: {
@@ -104,9 +106,9 @@ export default {
       this.current=ev.key
     },
     //动态改变tabBar栏的值
-     handleChangeTB (ev) {
+     handleChangetab (ev) {
           console.log(ev)
-      this.currentTB=ev.key
+      this.currenttab=ev.key
     }
   },
 
@@ -121,7 +123,9 @@ export default {
 .container {
   padding: 0px;
 }
-
+.footer{
+  height: 100px;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
