@@ -1,5 +1,0 @@
-<template name="64be5397">
-  <view class="_view data-v-7820c02e search-wrap">
-    <wxc-search class="_wxc-search data-v-7820c02e search" mode="static" align="center" bg-color="#fff"></wxc-search>
-  </view>
-</template>

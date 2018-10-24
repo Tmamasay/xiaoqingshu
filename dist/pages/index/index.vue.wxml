@@ -1,6 +1,0 @@
-<import src="/components/search/search.vue.wxml" />
-<import src="/components/lunbo/lunbo.vue.wxml" />
-<import src="/components/leibie/leibie.vue.wxml" />
-<import src="/components/tab/tab.vue.wxml" /><template name="68d637ff">
-  <view class="_div data-v-5c30957c container"><template data="{{...$root[$kk+'0'], $root}}" is="64be5397"></template> <template data="{{...$root[$kk+'1'], $root}}" is="19e2947a"></template> <template data="{{...$root[$kk+'2'], $root}}" is="a468ce52"></template> <template wx:if="{{current}}" data="{{...$root[$kk+'3'], $root}}" is="4c7d2149"></template></view>
-</template>

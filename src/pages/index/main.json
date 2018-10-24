@@ -6,7 +6,12 @@
        "wxc-flex": "/static/minui/wxc-flex/dist/index",
        "wxc-avatar": "/static/minui/wxc-avatar/dist/index",
        "i-tabs": "/static/iView/tabs/index",
-       "i-tab": "/static/iView/tab/index"
+       "i-tab": "/static/iView/tab/index",
+        "i-card": "/static/iView/card/index",
+        "wxc-elip": "/static/minui/wxc-elip/dist/index",
+        "wxc-label": "/static/minui/wxc-label/dist/index",
+        "i-tab-bar": "/static/iView/tab-bar/index",
+        "i-tab-bar-item": "/static/iView/tab-bar-item/index"
     },
   "enablePullDownRefresh": true,
   "backgroundTextStyle": "light",

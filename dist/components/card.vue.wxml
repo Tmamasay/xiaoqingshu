@@ -1,8 +1,0 @@
-<template name="a1d57cb6">
-  <view class="_div data-v-cf35f6be">
-    <view class="_p data-v-cf35f6be card">
-      {{text}}
-    </view>
-    <i-button type="primary" bind:click="handleClick" class="_i-button data-v-cf35f6be">这是一个按钮</i-button>
-  </view>
-</template>

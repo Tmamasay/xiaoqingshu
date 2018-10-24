@@ -3,7 +3,9 @@
 <search></search>
   <lunbo></lunbo>
 <leibie :LBDatas="LBDatas"></leibie>
-<tab v-if='current' :handleChange="getUserInfo" :current="current" ></tab>
+<tab v-if='current' :handleChange="handleChange" :current="current" ></tab>
+<remen v-if='comments' :comments="comments"></remen>
+<tabbar  v-if='currentTB' :handleChangeTB="handleChangeTB" :currentTB="currentTB" ></tabbar>
 
 
   </div>
@@ -15,6 +17,8 @@ import lunbo from "@/components/lunbo/lunbo";
 import search from "@/components/search/search";
 import leibie from "@/components/leibie/leibie";
 import tab from "@/components/tab/tab";
+import remen from "@/components/remen/remen";
+import tabbar from "@/components/tabBar/tabBar";
 
 export default {
   data() {
@@ -44,7 +48,24 @@ export default {
           img: "新的开始"
         }
       ]
-      ,current: 'tab1'
+      ,current: 'tab1',
+      currentTB:'homepage',
+      comments:[{
+        userImage:'https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg',
+        userName:'飞向远方',
+        userQM:'我是一批来自远方的狼',
+        textRM:'#这是一段行截断的文字#这是一段#行截断的文字,这是一段行截断的文字。这是一段行截断的文字。这是一段行截断的文字。这是一段行截断的文字',
+        userImg:['https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg','https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg','https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg'],
+        userBQ:['学生','流行','直播中']
+      },
+      {
+        userImage:'https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg',
+        userName:'飞向远方',
+        userQM:'我是一批来自远方的狼',
+        textRM:'#这是一段行截断的文字#这是一段#行截断的文字,这是一段行截断的文字。这是一段行截断的文字。这是一段行截断的文字。这是一段行截断的文字',
+        userImg:['https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg','https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg','https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg'],
+        userBQ:['学生','流行','直播中']
+      }]
     
     };
   },
@@ -54,7 +75,9 @@ export default {
     lunbo,
     search,
     leibie,
-    tab
+    tab,
+    remen,
+    tabbar
     // tabBar
   },
 
@@ -75,15 +98,16 @@ export default {
         }
       });
     },
+    //动态改变tab栏的值
      handleChange (ev) {
-          console.log('2')
-          this.setData({
-            current: ev.target.key
-        });
+          // console.log(ev)
+      this.current=ev.key
+    },
+    //动态改变tabBar栏的值
+     handleChangeTB (ev) {
+          console.log(ev)
+      this.currentTB=ev.key
     }
-    // clickHandle (msg, ev) {
-    //   console.log('clickHandle:', msg, ev)
-    // }
   },
 
   created() {
