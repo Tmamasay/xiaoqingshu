@@ -1,0 +1,7 @@
+{
+ "usingComponents": {
+        "i-tab-bar": "/static/iView/tab-bar/index",
+        "i-tab-bar-item": "/static/iView/tab-bar-item/index"
+    },
+    "navigationBarTitleText": "查看启动日志"
+}

@@ -1,17 +1,25 @@
 <template>
 <div class="tabbarStyle">
-<i-tab-bar :current="currenttab" @change="handletab">
-    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="Home"></i-tab-bar-item>
-    <i-tab-bar-item key="group" icon="group" current-icon="group_fill" title="Friends"></i-tab-bar-item>
-    <i-tab-bar-item key="remind" icon="remind" current-icon="remind_fill" count="3" title="Notice"></i-tab-bar-item>
-    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="My"></i-tab-bar-item>
+<i-tab-bar :current="count" @change="handletab">
+    <i-tab-bar-item key="homepage" icon="homepage" current-icon="homepage_fill" title="主页"></i-tab-bar-item>
+    <i-tab-bar-item key="service" icon="service" current-icon="service_fill" title="商城"></i-tab-bar-item>
+    <i-tab-bar-item key="like" icon="like" current-icon="like_fill" count="3" title="喜欢"></i-tab-bar-item>
+    <i-tab-bar-item key="mine" icon="mine" current-icon="mine_fill" dot title="我的"></i-tab-bar-item>
 </i-tab-bar>
 
 </div>
 </template>
 <script>
+// Use Vuex
+import store from '@/store/index'
 export default {
-  props: ['currenttab','handleChangetab'],
+   computed: {
+    count () {
+      return store.state.currenttab
+    }
+  }
+  ,
+
   data() {   
     // return{
     //   current:'homepage'
@@ -21,7 +29,7 @@ export default {
   methods: {
       handletab (detail) {
           console.log(detail.target);
-          this.handleChangetab(detail.target)
+          store.commit('handleChangetab',detail.target)
     }
   }
 };

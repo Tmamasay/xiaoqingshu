@@ -5,9 +5,11 @@
 <leibie :LBDatas="LBDatas"></leibie>
 <tab v-if='current' :handleChange="handleChange" :current="current" ></tab>
 <remen v-if='comments' :comments="comments"></remen>
-<tabfooter  v-if='currenttab' :handleChangetab="handleChangetab" :currenttab="currenttab" ></tabfooter>
+<!-- <tabfooter  v-if='currenttab' :handleChangetab="handleChangetab" :currenttab="currenttab" ></tabfooter> -->
+<tabfooter></tabfooter>
 <div class="footer">
 <wxc-loadmore :is-end="true" text="到底了～"></wxc-loadmore>
+
 </div>
 
 
@@ -52,7 +54,6 @@ export default {
         }
       ]
       ,current: 'tab1',
-      currenttab:'homepage',
       comments:[{
         userImage:'https://s11.mogucdn.com/p2/170413/upload_86dkh4e886991g9lji7a6g5c530ji_400x400.jpg',
         userName:'飞向远方',
@@ -84,10 +85,7 @@ export default {
   },
 
   methods: {
-    bindViewTap() {
-      const url = "../logs/main";
-      wx.navigateTo({ url });
-    },
+    
     getUserInfo() {
       // 调用登录接口
       wx.login({
@@ -104,17 +102,17 @@ export default {
      handleChange (ev) {
           // console.log(ev)
       this.current=ev.key
-    },
-    //动态改变tabBar栏的值
-     handleChangetab (ev) {
-          console.log(ev)
-      this.currenttab=ev.key
     }
   },
 
   created() {
     // 调用应用实例的方法获取全局数据
     this.getUserInfo();
+    // wx.hideTabBar();
+  },
+  onShow(){
+    // 关闭原声的tabbar
+    wx.hideTabBar();
   }
 };
 </script>
