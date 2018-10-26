@@ -1,7 +1,14 @@
 {
  "usingComponents": {
         "i-tab-bar": "/static/iView/tab-bar/index",
-        "i-tab-bar-item": "/static/iView/tab-bar-item/index"
+        "i-tab-bar-item": "/static/iView/tab-bar-item/index",
+         "wxc-flex": "/static/minui/wxc-flex/dist/index",
+         "wxc-avatar": "/static/minui/wxc-avatar/dist/index",
+         "wxc-icon": "/static/minui/wxc-icon/dist/index"
     },
-    "navigationBarTitleText": "查看启动日志"
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff467c",
+    "navigationBarTitleText": "我",
+    "background":"#ff467c"
 }

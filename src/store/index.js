@@ -7,7 +7,8 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    currenttab:'homepage'
+    currenttab:'homepage',
+    userInfo: {}
   },
   mutations: {
     //动态改变tabBar栏的值
@@ -36,9 +37,9 @@ const store = new Vuex.Store({
           break;
       }
     },
-    decrement: (state) => {
-      const obj = state
-      obj.count -= 1
+    getUserInfo(state,payload) {
+      // 调用登录接口
+      state.userInfo = payload;
     }
   }
 })

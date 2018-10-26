@@ -24,12 +24,11 @@ import leibie from "@/components/leibie/leibie";
 import tab from "@/components/tab/tab";
 import remen from "@/components/remen/remen";
 import tabfooter from "@/components/tabfooter/tabfooter";
-
+import store from '@/store/index'
 export default {
   data() {
     return {
       motto: "Hello World",
-      userInfo: {},
       LBDatas: [
         {
           //数据在哪个组件，更新数据的行为(方法),就应该在哪个页面
@@ -85,19 +84,19 @@ export default {
   },
 
   methods: {
-    
-    getUserInfo() {
-      // 调用登录接口
-      wx.login({
-        success: () => {
-          wx.getUserInfo({
-            success: res => {
-              this.userInfo = res.userInfo;
-            }
-          });
-        }
-      });
-    },
+    // getUserInfo() {
+    //   // 调用登录接口
+    //   wx.login({
+    //     success: () => {
+    //       wx.getUserInfo({
+    //         success: res => {
+    //           this.userInfo = res.userInfo;
+    //           console.log(this.userInfo)
+    //         }
+    //       });
+    //     }
+    //   });
+    // },
     //动态改变tab栏的值
      handleChange (ev) {
           // console.log(ev)
@@ -107,7 +106,8 @@ export default {
 
   created() {
     // 调用应用实例的方法获取全局数据
-    this.getUserInfo();
+    store.commit('getUserInfo')
+    // this.getUserInfo();
     // wx.hideTabBar();
   },
   onShow(){
