@@ -4,7 +4,9 @@
         "i-tab-bar-item": "/static/iView/tab-bar-item/index",
          "wxc-flex": "/static/minui/wxc-flex/dist/index",
          "wxc-avatar": "/static/minui/wxc-avatar/dist/index",
-         "wxc-icon": "/static/minui/wxc-icon/dist/index"
+         "wxc-icon": "/static/minui/wxc-icon/dist/index",
+         "wxc-list": "/static/minui/wxc-list/dist/index",
+         "wxc-loadmore": "/static/minui/wxc-loadmore/dist/index"
     },
     "enablePullDownRefresh": true,
     "backgroundTextStyle": "light",

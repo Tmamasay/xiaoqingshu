@@ -8,7 +8,7 @@
 <!-- <tabfooter  v-if='currenttab' :handleChangetab="handleChangetab" :currenttab="currenttab" ></tabfooter> -->
 <tabfooter></tabfooter>
 <div class="footer">
-<wxc-loadmore :is-end="true" text="到底了～"></wxc-loadmore>
+<wxc-loadmore :is-end="true" text="我是有底线的～"></wxc-loadmore>
 
 </div>
 
@@ -84,19 +84,6 @@ export default {
   },
 
   methods: {
-    // getUserInfo() {
-    //   // 调用登录接口
-    //   wx.login({
-    //     success: () => {
-    //       wx.getUserInfo({
-    //         success: res => {
-    //           this.userInfo = res.userInfo;
-    //           console.log(this.userInfo)
-    //         }
-    //       });
-    //     }
-    //   });
-    // },
     //动态改变tab栏的值
      handleChange (ev) {
           // console.log(ev)
@@ -106,8 +93,6 @@ export default {
 
   created() {
     // 调用应用实例的方法获取全局数据
-    store.commit('getUserInfo')
-    // this.getUserInfo();
     // wx.hideTabBar();
   },
   onShow(){

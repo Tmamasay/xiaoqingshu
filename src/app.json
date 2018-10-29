@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/main",
     "pages/counter/main",
-     "pages/mine/main"
+     "pages/mine/main",
+     "pages/shouquan/main"
     
   ],
   "window": {

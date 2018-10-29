@@ -1,0 +1,10 @@
+{
+ "usingComponents": {
+        "i-button": "/static/iView/button/index"
+    },
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "登录",
+    "background":"#fff"
+}

@@ -39,5 +39,6 @@ export default {
 width: 100%;
 position:fixed;
 bottom: 0px;
+font-size: 18px
 }
 </style>
