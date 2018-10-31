@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/counter/main",
+    "pages/storefk/main",
+    "pages/likes/main",
      "pages/mine/main",
      "pages/shouquan/main"
     
@@ -20,7 +21,10 @@
           "pagePath": "pages/index/main"
         },
         {
-          "pagePath": "pages/counter/main"
+          "pagePath": "pages/storefk/main"
+        },
+        {
+          "pagePath": "pages/likes/main"
         },
         {
           "pagePath": "pages/mine/main"

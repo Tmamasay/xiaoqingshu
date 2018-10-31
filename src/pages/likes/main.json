@@ -1,0 +1,15 @@
+{
+    "usingComponents": {
+           "i-button": "/static/iView/button/index",
+           "wxc-icon": "/static/minui/wxc-icon/dist/index",
+           "wxc-search": "/static/minui/wxc-search/dist/index",
+           "i-tab-bar": "/static/iView/tab-bar/index",
+        "i-tab-bar-item": "/static/iView/tab-bar-item/index"
+       },
+       "enablePullDownRefresh": true,
+       "backgroundTextStyle": "light",
+       "navigationBarBackgroundColor": "#fff",
+       "navigationBarTitleText": "喜欢",
+       "background":"#fff"
+   }
+   

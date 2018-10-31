@@ -63,10 +63,14 @@ const store = new Vuex.Store({
             })
           break;
           case 'service':
-          
+          wx.switchTab({
+            url: '../storefk/main',   //注意switchTab只能跳转到带有tab的页面，不能跳转到不带tab的页面
+            })
           break;
           case 'like':
-          
+            wx.switchTab({
+            url: '../likes/main',   //注意switchTab只能跳转到带有tab的页面，不能跳转到不带tab的页面
+            })
           break;
           case 'mine':
           wx.switchTab({
