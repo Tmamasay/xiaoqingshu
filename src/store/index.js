@@ -9,6 +9,8 @@ const store = new Vuex.Store({
   state: {
     currenttab:'homepage',
     userInfo:'',
+    baseurl:'http://127.0.0.1:7001',
+    // baseurl:'http://www.dseacode.com/',
     listMine: [{
       title: '打卡领红包',
       desc: '您有1个10元红包可领取',
